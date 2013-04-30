@@ -1,3 +1,5 @@
+See programming_puzzle.pdf for the original problem statement.
+
 The environment specs are: ant 1.7.1, java 1.7.0_04.
 You can build using 'ant clean dist' and run using java -jar on the jar file.
 
