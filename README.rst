@@ -1,5 +1,5 @@
 Videoplaza programming puzzle
-=============================
+-----------------------------
 
 You are in charge of selling online video advertising at a large media company. Your job is to make sure that you make as much money as possible from ads running on your site. You are very good at what you do and can sell virtually an infinite amount of impressions (a display of an ad to a user) to a multitude of advertisers.
 However, your boss isn't happy. He claims that you cannot show more than 3 ads before each video clip on the site, or no one will visit the site. Although you are very skeptical about this, you must do what your boss tells you. This upcoming month you therefore have a total ad inventory of 32 356 000 impressions available 
@@ -58,12 +58,12 @@ Solution observations
 The environment specs are: ant 1.7.1, java 1.7.0_04.
 You can build using 'ant clean dist' and run using java -jar on the jar file.
 
-Regarding the solution, I've basically reduced the linear programming problem that the puzzle constitutes to a knapsack problem, and optimized with respect to a few assumptions I've made:
-I assume that the problem you gave me constitutes a non edge case when it comes to the number of campaigns to choose from and the number of impression involved in the campaigns and the monthly limit. Regarding this last aspect, I assume that they have a large common divisor such as 4000 in the problem you gave me, since it allows me to a factor of the computational complexity of the algorithm solving the knapsack problem by a factor equal to the greatest common divider. It is also good when the ratio of the monthly impression limit over the campaign impression numbers is contained.
+Regarding the solution, the linear programming problem that the puzzle constitutes has been reduced to a knapsack problem, and optimized with respect to a few assumptions:
+It is assumed that the problem input given me constitutes a non edge case when it comes to the number of campaigns to choose from and the number of impression involved in the campaigns and the monthly limit. Regarding this last aspect, it is assumed that they have a large common divisor such as 4000 for the given problem input, since this allow to reduce the computational complexity of the algorithm solving the knapsack problem by a factor equal to the greatest common divider. It is also good when the ratio of the monthly impression limit over the campaign impression numbers is contained.
 
-Relating to code design, I honestly didn't pay too much attention to this considering the task, and assuming that you are more interested in the algorithm. Coming to the algorithm, the knapsack problem is solved in polynomial time in relation to its input. If the assumptions I made are valid in practical scenario, than this computational cost is valid for the entire problem. I'll be willing to expand on this over the phone, as you mentioned that there would be a following interview to discuss the solution.
+Relating to code design, no attention was payed to code design, the focus was layed on the algorithm itself. Coming to the algorithm, the knapsack problem is solved in polynomial time in relation to its input. If the assumptions made are valid in a practical scenario, then this computational cost is valid for the entire problem.
 
-The solution it returns for the data set you gave me is:
+The solution returns for the given problen input is:
 
 Lorem,8,28000000,3200
 Amet,2,3000000,320
