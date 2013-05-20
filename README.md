@@ -1,5 +1,5 @@
 Videoplaza programming puzzle
------------------------------
+=============================
 
 You are in charge of selling online video advertising at a large media company. Your job is to make sure that you make as much money as possible from ads running on your site. You are very good at what you do and can sell virtually an infinite amount of impressions (a display of an ad to a user) to a multitude of advertisers.
 However, your boss isn't happy. He claims that you cannot show more than 3 ads before each video clip on the site, or no one will visit the site. Although you are very skeptical about this, you must do what your boss tells you. This upcoming month you therefore have a total ad inventory of 32 356 000 impressions available 
@@ -8,27 +8,25 @@ To further complicate matters, you cannot sell an arbitrary number of impression
 Your job will be to choose how many campaigns to sell to what customers in order to maximize the revenue.
 For the upcoming month, your options are as follows:
 
-=========   ========================    ====================
-Customers 	Impressions per campaign 	Revenue per campaign
-=========   ========================    ====================
-Acme		2 000 000  					200 €
-Lorem 		3 500 000 					400 €
-Ipsum 		2 300 000 					210 €
-Dolor 		8 000 000 					730 €
-SIT 		10 000 000 					1,000 €
-Amet 		1 500 000 					160 €
-Mauris 		1 000 000 					100 €
-=========   ========================    ====================
-
+<table>
+<tr><th>Customers</th><th>Impressions per campaign</th><th>Revenue per campaign</th></tr>
+<tr><td>Acme</td><td>2 000 000 </td><td>200 €</td>
+<tr><td>Lorem</td><td>3 500 000</td><td>400 €</td>
+<tr><td>Ipsum</td><td>2 300 000</td><td>210 €</td>
+<tr><td>Dolor</td><td>8 000 000</td><td>730 €</td>
+<tr><td>SIT</td><td>10 000 000</td><td>1,000 €</td>
+<tr><td>Amet</td><td>1 500 000</td><td>160 €</td>
+<tr><td>Mauris</td><td>1 000 000</td><td>100 €</td>
+</table>
 
 Since you are not only a good sales person, but also an excellent programmer, you decide to write a program that will help you find the best possible mix of campaigns. And since you hate repeating yourself, you make sure you write the program so you can re-use it next month as well.
 Write a java program that takes a single argument on the command line. This argument must be a file name, which contains the input data.
 
 The input file will always be formatted as follows:
-<monthly inventory>
-<customer>,<impressions per campaign>,<price per campaign>
+[monthly inventory]
+[customer],[impressions per campaign],[price per campaign]
 ...
-<customer>,<impressions per campaign>,<price per campaign>
+[customer],[impressions per campaign],[price per campaign]
 
 The monthly inventory will be an integer.
 The customer name will contain no spaces.
@@ -53,7 +51,7 @@ revenue for customer>
 
 
 Solution observations
-=====================
+---------------------
 
 The environment specs are: ant 1.7.1, java 1.7.0_04.
 You can build using 'ant clean dist' and run using java -jar on the jar file.
