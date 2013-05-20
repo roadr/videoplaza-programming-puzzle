@@ -10,7 +10,7 @@ For the upcoming month, your options are as follows:
 
 =========   ========================    ====================
 Customers 	Impressions per campaign 	Revenue per campaign
----------   ------------------------    --------------------
+=========   ========================    ====================
 Acme		2 000 000  					200 €
 Lorem 		3 500 000 					400 €
 Ipsum 		2 300 000 					210 €
