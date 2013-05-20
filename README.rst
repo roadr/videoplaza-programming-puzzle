@@ -8,7 +8,9 @@ To further complicate matters, you cannot sell an arbitrary number of impression
 Your job will be to choose how many campaigns to sell to what customers in order to maximize the revenue.
 For the upcoming month, your options are as follows:
 
+=========   ========================    ====================
 Customers 	Impressions per campaign 	Revenue per campaign
+---------   ------------------------    --------------------
 Acme		2 000 000  					200 €
 Lorem 		3 500 000 					400 €
 Ipsum 		2 300 000 					210 €
@@ -16,6 +18,8 @@ Dolor 		8 000 000 					730 €
 SIT 		10 000 000 					1,000 €
 Amet 		1 500 000 					160 €
 Mauris 		1 000 000 					100 €
+=========   ========================    ====================
+
 
 Since you are not only a good sales person, but also an excellent programmer, you decide to write a program that will help you find the best possible mix of campaigns. And since you hate repeating yourself, you make sure you write the program so you can re-use it next month as well.
 Write a java program that takes a single argument on the command line. This argument must be a file name, which contains the input data.
